@@ -12,7 +12,7 @@
     <title>QuickRoute</title>
     <authors>Mats Troeng,Jörgen Ohlin</authors>
     <projectUrl>http://www.matstroeng.se/quickroute/en/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/overag3/quickroute/quickroute.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/overag3/quickroute/QuickRoute.png</iconUrl>
     <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/matstroeng/quickroute</projectSourceUrl>
