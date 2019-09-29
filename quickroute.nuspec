@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>quickroute</id>
+    <version>2.4.0</version>
+    <packageSourceUrl>https://github.com/overag3/quickroute</packageSourceUrl>
+    <owners>overage</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>QuickRoute</title>
+    <authors>Mats Troeng,Jörgen Ohlin</authors>
+    <projectUrl>http://www.matstroeng.se/quickroute/en/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/overag3/quickroute/quickroute.png</iconUrl>
+    <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/matstroeng/quickroute</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/matstroeng/quickroute/issues</bugTrackerUrl>
+    <tags>orienteering map quickroute gps</tags>
+    <summary>A simple display of a GPS route on an orienteering map</summary>
+    <description>
+QuickRoute is a computer program for Windows that allows you to display a route from a GPS device, such as a GPS-clock, on an orienteering map saved as an image file.
+The main purpose of QuickRoute is to make it quick and simple to transfer your route from a GPS device onto a map.
+To run QuickRoute on Mac OS X, a virtualization software like VMware Fusion or Parallels Desktop is required. There is no native Mac OS X version of QuickRoute.
+
+QuickRoute has built-in support for GPS devices in the Garmin Forerunner series. Other devices that can produce data files in the GPX format are also supported. Integration with Google Earth gives great opportunities to analysis of geographical data.
+    </description>
+    <dependencies>
+      <dependency id="dotnetfx" version="4.6.2.0" />
+    </dependencies>
+    <!-- =============================== -->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
