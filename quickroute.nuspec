@@ -32,7 +32,7 @@ QuickRoute has built-in support for GPS devices in the Garmin Forerunner series.
  - Due to packaging error, a transform file (MST) is applied during install of this package to fix product version that is not correct.
     </description>
     <dependencies>
-      <dependency id="dotnet3.5" />
+      <dependency id="dotnet3.5" version="3.5.20160716"/>
     </dependencies>
     <!-- =============================== -->
   </metadata>
