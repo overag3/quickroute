@@ -15,6 +15,8 @@ $packageArgs = @{
   validExitCodes = @(0, 3010, 1641)
 }
 
+$env:ChocolateyForce
+
 #Uninstalls the previous version of QuickRoute if either version exists
 Write-Output "Searching if the previous version exists..."
 $InstallerVersion = $version.Replace('.', '')
@@ -36,7 +38,12 @@ if ($checkreg.Count -eq 0) {
         Write-Output "Installing new version of QuickRoute"
         Install-ChocolateyPackage @packageArgs
       } elseif ($_.DisplayVersion.Replace('.', '') -eq $InstallerVersion) {
-        Write-Output "QuickRoute $version already installed, skip download and install"
+        if ($env:ChocolateyForce) {
+          Write-Output "QuickRoute $version already installed, but --force option is passed, download and install"
+          Install-ChocolateyPackage @packageArgs
+        } else {
+          Write-Output "QuickRoute $version already installed, skip download and install"
+        }
       }
     }
   }
