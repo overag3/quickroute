@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'https://www.matstroeng.se/quickroute/download/QuickRoute_2.4_Setup.msi'
+$url = 'https://www.matstroeng.se/quickroute/download/download_file.php?version=2.4'
 $version = '2.4'
 
 $packageArgs = @{
@@ -8,7 +8,7 @@ $packageArgs = @{
   fileType       = 'MSI'
   url            = $url
   softwareName   = 'quickroute*'
-  checksum       = '64E73D9090C0AC1C9236199ABC8B8D48689CCB0042C5C3CDBD0C1C3B81B2DC3D'
+  checksum       = '64e73d9090c0ac1c9236199abc8b8d48689ccb0042c5c3cdbd0c1c3b81b2dc3d'
   checksumType   = 'sha256'
   silentArgs     = "/qn /norestart ALLUSERS=1 /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
   validExitCodes = @(0, 3010, 1641)
